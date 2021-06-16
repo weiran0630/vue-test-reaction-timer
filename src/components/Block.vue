@@ -63,7 +63,6 @@ export default {
 	color: #dbdbd2;
 	font-size: 3rem;
 	font-weight: 500;
-	text-shadow: #fff 1px 0 0.3px;
 	-webkit-text-stroke: 1.7px black;
 	position: absolute;
 }
