@@ -44,7 +44,7 @@ export default {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-top: 80px;
+	margin-top: 3rem;
 	width: 70%;
 	height: auto;
 }
@@ -55,8 +55,9 @@ export default {
 .block h1 {
 	color: #dbdbd2;
 	font-size: 3rem;
-	text-shadow: #fff 1px 0 0.1px;
-	-webkit-text-stroke: 2.3px black;
+	font-weight: 500;
+	text-shadow: #fff 1px 0 0.3px;
+	-webkit-text-stroke: 1.7px black;
 	position: absolute;
 }
 </style>
