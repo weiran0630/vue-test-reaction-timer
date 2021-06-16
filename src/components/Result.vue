@@ -24,4 +24,7 @@ export default {
 	margin-top: 4rem;
 	font-size: 0.8rem;
 }
+.result h1 {
+	color: rgb(0, 163, 109);
+}
 </style>
