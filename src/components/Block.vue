@@ -1,6 +1,6 @@
 <template>
-	<div v-if="show" class="block" @click="stopTimer">
-		<img :src="gifURL.url" alt="hahapy" />
+	<div v-show="show" class="block" @click="stopTimer">
+		<img :src="imgUrl" alt="hahapy" rel="preload" />
 		<h1>點我</h1>
 	</div>
 </template>
@@ -10,13 +10,20 @@ export default {
 	props: ["delay"],
 	data() {
 		return {
-			gifURL: { url: require("../assets/hahapy.gif") },
 			show: false,
+			imgUrl: null,
 			timer: null, // setInterval
 			reactionTime: 0,
 		};
 	},
 	mounted() {
+		let img = new Image();
+
+		img.onload = () => {
+			this.imgUrl = img.src;
+		};
+		img.src = require("../assets/hahapy.gif");
+
 		setTimeout(() => {
 			this.show = true;
 			this.startTimer();
