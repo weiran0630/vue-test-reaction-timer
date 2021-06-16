@@ -1,6 +1,6 @@
 <template>
 	<div v-show="show" class="block" @click="stopTimer">
-		<img :src="imgUrl" alt="hahapy" rel="preload" />
+		<img :src="imgUrl" alt="hahapy" />
 		<h1>點我</h1>
 	</div>
 </template>
